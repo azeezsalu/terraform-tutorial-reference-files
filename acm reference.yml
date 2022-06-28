@@ -1,0 +1,12 @@
+---
+Resources:
+  AwsAcmCertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties: 
+      DomainName: 
+      DomainValidationOptions: 
+        -   DomainName: 
+            HostedZoneId: 
+      SubjectAlternativeNames: 
+        - 
+      ValidationMethod: 
