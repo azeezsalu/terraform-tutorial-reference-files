@@ -81,6 +81,7 @@ resource "aws_security_group" "database_security_group" {
 }
 
 
+# create the subnet group for the rds instance
 resource "aws_db_subnet_group" "database_subnet_group" {
   name         = 
   subnet_ids   = 
@@ -92,6 +93,7 @@ resource "aws_db_subnet_group" "database_subnet_group" {
 }
 
 
+# create the rds instance
 resource "aws_db_instance" "db_instance" {
   engine                  = 
   engine_version          = 
